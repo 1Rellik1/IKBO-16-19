@@ -113,7 +113,6 @@ public class VisualInteface extends Application {
                 asserts.setText("");
                 flowPaneTop.getChildren().setAll(MakeComboBoxCompanies(),cash,asserts,MakeCheckBoxes(),
                         MakeButton(cash,asserts),MakeClearButton());
-                profit.setText("");
                 flowPaneCenter.getChildren().setAll();
             }
         });
@@ -229,7 +228,7 @@ public class VisualInteface extends Application {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 } catch (NumberFormatException e){
-                    profit.setText("Ошибка ввода");
+                    profit.setText("Ты делаешь что-то не так");
                 }
 
             }
